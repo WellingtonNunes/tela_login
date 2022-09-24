@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dadd998619.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tela_Login</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="banner">
+            <h1>Bem vindo</h1>
+        </div>
+        <!-- ------------------------------------------------------------------------------- -->
+        <div class="login">
+            <div class="form">
+                <h1>Realizar login</h1>
+                <input id="usuario" type="text" class="fontAwesome" placeholder="&#xf007  Usuário">
+                <input id="senha" type="password" class="fontAwesome" placeholder="&#xf023 Senha">
+                <button class="btn-login">Entrar</button>
+                <p>Ainda não tem uma conta? <span><a href="#" id="criar_conta">Criar agora</a></span></p>
+            </div> 
+        </div>
+        <!-- ------------------------------------------------------------------------------- -->
+        <div class="create-count">
+            <h1>Criar Conta</h1>
+            <div id="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <p>Ou use seu email para se cadastrar</p>
+            <div class="form">
+                <input type="text" class="fontAwesome" name="nome" placeholder="&#xf007  Usuário">
+                <input type="text" class="fontAwesome" name="email" placeholder="&#xf0e0  Email">
+                <input type="password" class="fontAwesome" name="password" placeholder="&#xf023 Senha">
+                <div class="btn-cadastro"><button class="btn-cadastrar">Cadastrar</button></div>
+            </div>
+        </div>
+    </section>
+    <script src="login.js"></script>
+</body>
+</html>

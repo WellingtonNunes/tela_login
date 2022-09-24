@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    font-family: 'Poppins', sans-serif;
+}
+section.container{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px #128383;
+    position: relative;
+    background-image: url(/img/pexels-pixabay-531880.jpg);
+    background-size: cover;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    padding: 1em;
+    box-shadow: inset 10px 0px 28px #237e7e;
+    width: 50%;
+}
+.banner h1{
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+/* ------------------------------------------------------ */
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(241, 241, 241);
+    position: absolute;
+    right: 0;
+    border-radius: 0 10px 10px 0;
+}   
+
+.login h1{
+    position: relative;
+    color: #1bb4b4;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7em;
+}
+.login p{
+    color: #000;
+    font-size: 13px;
+}
+.login a{
+    color: #1bb4b4;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.login button{
+    width: 100%;
+    background-color: #1bb4b4;
+    display: flex;
+    justify-content: center;
+    line-height: 45px;
+    border: none;
+    border-radius: 5px;
+    margin: .4em  0 .2em 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.login button:hover{
+    background-color: #1ab9b9;
+}
+/* ------------------------------------------------------ */
+.create-count{
+    width: 50%;
+    background-color: rgb(241, 241, 241);
+    border-radius: 0 10px 10px 0;
+}
+.create-count h1{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: #1bb4b4;
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 15px;
+    text-shadow: 0 1px 5px #1bb4b47a;
+}
+.create-count p{
+    text-align: center;
+    margin-top: 1em;
+    font-size: 14px;
+    color: rgb(185, 185, 185);
+}
+#icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+#icons i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 2px solid #1bb4b4;
+    cursor: pointer;
+    transition: ease-in-out .2s;
+    color: #1bb4b4;
+}
+#icons i:hover{
+    font-size: 2.3em;
+    width: 55px;
+    height: 55px;
+    box-shadow: 0 0 1em #1bb4b4;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;
+}
+.form > input{
+    line-height: 3em;
+    margin: 15px 0;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #1bb4b4;
+}
+.fontAwesome {
+    font-family: 'Helvetica', FontAwesome, sans-serif;
+    padding-left: 12px;
+    color: #1bb4b4;
+    font-size: 1em;
+}
+.btn-cadastro{
+    display: flex;
+    justify-content: center;
+}
+button.btn-cadastrar{
+    width: 100%;
+    line-height: 45px;
+    border-radius: 25px;
+    background-color: #1bb4b4;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
+}
+button.btn-cadastrar:hover{
+    background-image: linear-gradient(to right, #1bb4b4,#131855);
+}
+
+@media(max-width: 1024px){
+    section.container{
+        width: 70%;
+    }
+}
+@media(max-width: 768px){
+    section.container{
+        width: 80%;
+    }
+}
+@media(max-width: 580px){
+    body{
+        height: 100%;
+        padding: 2em 0;
+        background-color: #1bb4b4;
+    }
+    section.container{
+        flex-direction: column;
+        box-shadow: none;
+        border-radius: 0;
+        background-image: none;
+        padding: 18px;
+    }
+    .login, .create-count{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .banner{
+        display: none;
+    }
+    button.btn-login{
+        width: 100%;
+        line-height: 45px;
+        font-size: 18px;
+        margin-top: 2em;
+    }
+    .create-count h1{
+        font-size: 1.5em;
+    }
+    .create-count button{
+        margin-top: 7px;
+    }
+    .create-count p{
+        font-size: 10px;
+    }
+    .form p{
+        text-align: center;
+    }
+}
+@media(max-width: 380px){
+    section.container{
+        width: 95%;
+    }
+}
+
+.chama-tela{
+    transition: 1.5s;
+    opacity: 0;
+}
