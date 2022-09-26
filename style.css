@@ -18,7 +18,7 @@ section.container{
     border-radius: 10px;
     box-shadow: 0 0 15px 4px #128383;
     position: relative;
-    background-image: url(pexels-pixabay-531880.jpg);
+    background-image: url(/img/pexels-pixabay-531880.jpg);
     background-size: cover;
 }
 .banner{
